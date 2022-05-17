@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data>
+
+        <template id="report_remove_sales_person_from_quotation_print_report" inherit_id="sale.report_saleorder_document">
+
+            <xpath expr="//div[@t-if='doc.user_id.name']" position="replace"></xpath>
+
+        </template>
+    </data>
+</odoo>
