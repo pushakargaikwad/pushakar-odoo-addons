@@ -1,7 +1,7 @@
 {
-    'name' : 'Report Header Company on Right Side',
+    'name' : 'Company Details on Right Side of Header',
     'version' : '1.0.0',
-    'summary': 'Displays Company All Headers with your company details on the right side',
+    'summary': 'Displays Company details in Header with your company details on the right side',
     'sequence': 30,
     'description': """
            This module changes the default location of your company information to the right side. This module updates it on all reports. 
