@@ -1,0 +1,22 @@
+{
+    'name' : 'Report Header Company on Right Side',
+    'version' : '1.0.0',
+    'summary': 'Displays Company All Headers with your company details on the right side',
+    'sequence': 30,
+    'description': """
+           This module changes the default location of your company information to the right side. This module updates it on all reports. 
+           Note: This is just for your company details in header and not customer details. We have a separate module for that. 
+    """,
+    'website': 'https://www.pushakar.com',
+    'depends' : ['base','account','l10n_in','web'],
+    'data': ['views/pg_report_header_company_right_report.xml',],
+    'demo': [],
+    'qweb': [ ],
+    'author': 'Pushakar Gaikwad',
+    'license':'OPL-1',
+    'price': 9.99,
+    'currency': 'USD',
+    'installable': True,
+    'application': True,
+    'auto_install': False,
+}
