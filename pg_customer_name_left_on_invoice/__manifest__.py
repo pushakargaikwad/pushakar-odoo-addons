@@ -1,7 +1,7 @@
 {
-    'name' : 'Customer Name left side on invoice',
+    'name' : 'Customer Details left side of invoice',
     'version' : '1.0.1',
-    'summary': 'Displays Customer Name on the left side of invoice print',
+    'summary': 'Displays Customer Name and details on the left side of invoice print',
     'sequence': 30,
     "category": "Accounting",
     'description': """
@@ -10,6 +10,7 @@
     'website': 'https://www.pushakar.com',
     'depends' : ['base','account','account_invoicing','web'],
     'data': ['views/pg_customer_name_left_on_invoice.xml',],
+    'images': ['static/description/assets/main_screenshot.png','static/description/assets/screenshot_invoice.png'],
     'author': 'Pushakar Gaikwad',
     'license':'OPL-1',
     'price': 9.99,

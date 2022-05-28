@@ -1,3 +1,5 @@
+# Copyright 2022 Pushakar Gaikwad
+# License OPL-1 (Odoo Proprietary License v1.0).
 {
     'name' : 'Company Details on Right Side of Header',
     'version' : '1.0.0',

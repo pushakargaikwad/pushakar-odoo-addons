@@ -5,7 +5,7 @@
     'sequence': 31,
     'category': 'Sales',
     'description': """
-            If you dont want the Salesperson field to appear on the Print of Quotation and Sales Order, then this module is for you. 
+            If you don't want the Salesperson field to appear on the Print of Quotation and Sales Order, then this module is for you. 
     """,
     'website': 'https://www.pushakar.com',
     'depends' : ['base','mail','sale','sale_management'],
