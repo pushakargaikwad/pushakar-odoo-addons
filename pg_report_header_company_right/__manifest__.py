@@ -1,5 +1,5 @@
-# Copyright 2022 Pushakar Gaikwad
-# License OPL-1 (Odoo Proprietary License v1.0).
+# See LICENSE file for full copyright and licensing details.
+
 {
     'name' : 'Company Details on Right Side of Header',
     'version' : '1.0.0',
@@ -15,7 +15,7 @@
     'images': ['static/description/assets/main_screenshot.png'],
     'data': ['views/pg_report_header_company_right_report.xml',],
     'author': 'Pushakar Gaikwad',
-    'license':'OPL-1',
+    'license':'AGPL-3',
     'price': 9.99,
     'currency': 'USD',
     'installable': True,

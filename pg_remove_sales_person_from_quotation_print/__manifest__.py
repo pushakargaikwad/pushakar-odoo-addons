@@ -1,3 +1,5 @@
+# See LICENSE file for full copyright and licensing details.
+
 {
     'name' : 'Remove Salesperson from Quotation Print',
     'version' : '1.0.0',
@@ -11,7 +13,7 @@
     'depends' : ['base','mail','sale','sale_management'],
     'data': ['views/pg_remove_sales_person_from_quotation_print.xml'],
     'author': 'Pushakar Gaikwad',
-    'license':'OPL-1',
+    'license':'AGPL-3',
     'price': 9.99,
     'currency': 'USD',
     'installable': True,

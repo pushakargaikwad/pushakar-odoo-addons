@@ -1,3 +1,5 @@
+# See LICENSE file for full copyright and licensing details.
+
 {
     'name' : 'Remove time on quotation print',
     'version' : '1.0.0',
@@ -12,7 +14,7 @@
     'depends' : ['base','mail','sale','sale_management'],
     'data': ['views/pg_remove_time_on_quotation_print.xml'],
     'author': 'Pushakar Gaikwad',
-    'license':'OPL-1',
+    'license':'AGPL-3',
     'price': 9.99,
     'currency': 'USD',
     'installable': True,

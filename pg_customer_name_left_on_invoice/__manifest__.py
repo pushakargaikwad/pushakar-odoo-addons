@@ -1,3 +1,5 @@
+# See LICENSE file for full copyright and licensing details.
+
 {
     'name' : 'Customer Details left side of invoice',
     'version' : '1.0.1',
@@ -12,7 +14,7 @@
     'data': ['views/pg_customer_name_left_on_invoice.xml',],
     'images': ['static/description/assets/main_screenshot.png','static/description/assets/screenshot_invoice.png'],
     'author': 'Pushakar Gaikwad',
-    'license':'OPL-1',
+    'license':'AGPL-3',
     'price': 9.99,
     'currency': 'USD',
     'installable': True,
