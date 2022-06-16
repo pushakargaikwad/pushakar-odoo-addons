@@ -12,6 +12,7 @@
     'website': 'https://www.pushakar.com',
     'depends' : ['base','mail','sale','sale_management'],
     'data': ['views/pg_remove_sales_person_from_quotation_print.xml'],
+    'images': ['static/description/assets/main_screenshot.png'],
     'author': 'Pushakar Gaikwad',
     'license':'AGPL-3',
     'price': 9.99,
