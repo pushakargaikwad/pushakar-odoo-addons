@@ -9,7 +9,7 @@
     'description': """
             This module displays the Customer Name, Address and other details on the left side of Invoice print
     """,
-    'website': 'https://www.pushakar.com',
+    'website': 'https://pushakar.com/odoo-development/',
     'depends' : ['base','account','account_invoicing','web'],
     'data': ['views/pg_customer_name_left_on_invoice.xml',],
     'images': ['static/description/assets/main_screenshot.png','static/description/assets/screenshot_invoice.png'],

@@ -10,7 +10,7 @@
            This module changes the default location of your company information to the right side. This module updates it on all reports. 
            Note: This is just for your company details in header and not customer details. We have a separate module for that. 
     """,
-    'website': 'https://www.pushakar.com',
+    'website': 'https://pushakar.com/odoo-development/',
     'depends' : ['base','account','l10n_in','web'],
     'images': ['static/description/banner.gif'],
     'data': ['views/pg_report_header_company_right_report.xml',],

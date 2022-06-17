@@ -10,7 +10,7 @@
       Sometimes you just want to display date (and not exact time) on Quotation. This is particularly required for fields like Confirmation Date, Order Date and Validity date. This module removes the time information of these fields from the Quotation and Sales Order Print Documents 
             
     """,
-    'website': 'https://www.pushakar.com',
+    'website': 'https://pushakar.com/odoo-development/',
     'depends' : ['base','mail','sale','sale_management'],
     'data': ['views/pg_remove_time_on_quotation_print.xml'],
     'images': ['static/description/banner.gif'],

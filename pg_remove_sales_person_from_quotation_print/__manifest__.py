@@ -9,7 +9,7 @@
     'description': """
             If you don't want the Salesperson field to appear on the Print of Quotation and Sales Order, then this module is for you. 
     """,
-    'website': 'https://www.pushakar.com',
+    'website': 'https://pushakar.com/odoo-development/',
     'depends' : ['base','mail','sale','sale_management'],
     'data': ['views/pg_remove_sales_person_from_quotation_print.xml'],
     'images': ['static/description/assets/main_screenshot.png'],
