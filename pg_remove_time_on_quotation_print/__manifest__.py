@@ -13,7 +13,7 @@
     'website': 'https://www.pushakar.com',
     'depends' : ['base','mail','sale','sale_management'],
     'data': ['views/pg_remove_time_on_quotation_print.xml'],
-    'images': ['static/description/assets/main_screenshot.png'],
+    'images': ['static/description/banner.gif'],
     'author': 'Pushakar Gaikwad',
     'license':'AGPL-3',
     'price': 9.99,
