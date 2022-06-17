@@ -11,7 +11,7 @@
            Note: This is just for your company details in header and not customer details. We have a separate module for that. 
     """,
     'website': 'https://pushakar.com/odoo-development/',
-    'depends' : ['base','account','l10n_in','web'],
+    'depends' : ['base','account','web'],
     'images': ['static/description/banner.gif'],
     'data': ['views/pg_report_header_company_right_report.xml',],
     'author': 'Pushakar Gaikwad',
