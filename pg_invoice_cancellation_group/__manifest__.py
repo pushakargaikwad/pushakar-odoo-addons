@@ -11,6 +11,7 @@
             1. Created new group named as "Invoice Cancel Rights" Under "Allow to cancel invoice" group category.
             2. This group basically assigned to user who has an authority to cancel the invoice. 
             3. "Cancel Invoice" button will be visible to this group only. 
+            
             "Account Cancel" which is a free module is required to be installed and configured for this module to work. 
             After Installation, To view cancel buttons Invoice and Payment the user should be assigned to the group "Invoice Cancel Rights"
             Be careful with this module as it has audit implications. Cancelling accounting entries is not authorized in all countries.
