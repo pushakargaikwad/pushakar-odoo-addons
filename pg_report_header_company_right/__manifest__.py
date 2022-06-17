@@ -12,7 +12,7 @@
     """,
     'website': 'https://www.pushakar.com',
     'depends' : ['base','account','l10n_in','web'],
-    'images': ['static/description/banner.gif','static/description/assets/main_screenshot.png'],
+    'images': ['static/description/banner.gif'],
     'data': ['views/pg_report_header_company_right_report.xml',],
     'author': 'Pushakar Gaikwad',
     'license':'AGPL-3',
