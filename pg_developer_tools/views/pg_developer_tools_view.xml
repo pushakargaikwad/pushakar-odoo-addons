@@ -19,6 +19,9 @@
                 <xpath expr="//field[@name='installed_version']" position="after">
                     <field name="latest_version"/>
                 </xpath>
+                <xpath expr="//tree" position="attributes">
+                    <attribute name="decoration-danger">state=='uninstalled' or installed_version!=latest_version</attribute>
+                </xpath>
             </field>
         </record>
         <record id="pg_apps_search" model="ir.ui.view">
