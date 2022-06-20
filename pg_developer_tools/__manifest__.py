@@ -2,9 +2,10 @@
 
 {
     'name' : 'Development Tweaks and Tools to make life Easier',
-    'version' : '1.0.0',
+    'version' : '1.0.1',
     'summary': '',
     'sequence': 31,
+    "category": "Tools",
     'description': """
 		.
             
