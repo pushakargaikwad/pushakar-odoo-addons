@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="pg_apps_form" model="ir.ui.view">
+            <field name="name">Apps</field>
+            <field name="model">ir.module.module</field>
+            <field name="inherit_id" ref="base.module_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='installed_version']" position="after">
+                    <field name="latest_version" readonly="1"  />
+                </xpath>
+            </field>
+        </record>
+        <record id="pg_apps_tree" model="ir.ui.view">
+            <field name="name">Apps</field>
+            <field name="model">ir.module.module</field>
+            <field name="inherit_id" ref="base.module_tree"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='installed_version']" position="after">
+                    <field name="latest_version"/>
+                </xpath>
+            </field>
+        </record>
+        <record id="pg_apps_search" model="ir.ui.view">
+            <field name="name">Apps</field>
+            <field name="model">ir.module.module</field>
+            <field name="inherit_id" ref="base.view_module_filter"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='category_id']" position="after">
+                    <field name="author"/>
+                    <field name="summary"/>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>
