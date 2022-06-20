@@ -21,5 +21,16 @@
                 </xpath>
             </field>
         </record>
+        <record id="pg_apps_search" model="ir.ui.view">
+            <field name="name">Apps</field>
+            <field name="model">ir.module.module</field>
+            <field name="inherit_id" ref="base.view_module_filter"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='category_id']" position="after">
+                    <field name="author"/>
+                    <field name="summary"/>
+                </xpath>
+            </field>
+        </record>
     </data>
 </odoo>
