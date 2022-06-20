@@ -7,7 +7,7 @@
     'sequence': 31,
     "category": "Tools",
     'description': """
-		.
+		A set of tools and tweaks to make Development easier and faster
             
     """,
     'website': 'https://pushakar.com/odoo-development/',
