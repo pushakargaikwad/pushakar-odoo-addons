@@ -2,12 +2,14 @@
 
 {
     'name' : 'Development Tweaks and Tools to make life Easier',
-    'version' : '1.0.1',
-    'summary': '',
+    'version' : '1.0.2',
+    'summary': 'A set of tools and tweaks to make Development easier and faster',
     'sequence': 31,
     "category": "Tools",
     'description': """
 		A set of tools and tweaks to make Development easier and faster
+    1. Added fields to view installed and latest versions
+    2. Ability to search via Author, Summary Fields
             
     """,
     'website': 'https://pushakar.com/odoo-development/',
