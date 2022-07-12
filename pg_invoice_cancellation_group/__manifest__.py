@@ -22,6 +22,7 @@
     'website': 'https://pushakar.com/odoo-development/',
     'depends' : ['base','account','account_cancel'],
     'data': ['views/pg_invoice_cancellation.xml','views/pg_invoice_cancellation_group.xml'],
+    'images': ['static/description/assets/main_screenshot.png'],
     'demo': [],
     'qweb': [ ],
     'author': 'Pushakar Gaikwad',
