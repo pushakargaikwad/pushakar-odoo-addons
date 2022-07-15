@@ -1,0 +1,13 @@
+from odoo import api, fields, models, _
+
+
+class pg_res_partner_bank(models.Model): 
+    _inherit="res.partner.bank"
+
+    x_account_name = fields.Char(string="Account Name")
+
+
+class pg_res_bank(models.Model): 
+    _inherit="res.bank"
+
+    x_branch_name = fields.Char(string="Branch Name")
