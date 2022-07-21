@@ -3,44 +3,45 @@
     <data>
 
         <template id="report_payment_term_report" inherit_id="account.report_invoice_document">
-         
-            <xpath expr="//p[@t-if='o.payment_term_id']" position="after">
+            <xpath expr="//p[@t-if='o.narration']" position="after">
                 
-                <div id="total" class="row">
-
-                        <div class="col-xs-6 pull-left">
-                                <t t-if="o.company_id.country_id.code == 'IN' and o.company_id.partner_id.bank_ids">
-                                        <p id="bank_details" class="mb4">
-                                            <strong>
-                                            Bank Details :
-                                            </strong>
+                <div id="bank" class="mb16" t-if="o.company_id.partner_id.bank_ids">
+                        
+                        
+                            <p id="bank_details" class="mb4">
+                                <strong>
+                                Bank Details :
+                                </strong>
                                 <p id="bank_name" class="mb4">
-                                        <strong>Bank Name: </strong>
-                                        <span t-field="o.company_id.partner_id.bank_ids[0].bank_id.name" />
-                                    </p>
+                                    <strong>Bank Name: </strong>
+                                    <span t-field="o.company_id.partner_id.bank_ids[0].bank_id.name" />
+                                </p>
 
-                                    <p id="branch_name" class="mb4" t-if="o.company_id.partner_id.bank_ids[0].x_account_name">
-                                            <strong>Account Name: </strong>
-                                            <span t-field="o.company_id.partner_id.bank_ids[0].x_account_name" />
-                                    </p>
-                                    <p id="acc_number" class="mb4">
-                                        <strong>Account Number:</strong>
-                                        <span t-field="o.company_id.partner_id.bank_ids[0].acc_number" />
-                                    </p>
-                                    <p id="bic" class="mb4">
-                                        <strong>Bank Code: </strong>
-                                        <span t-field="o.company_id.partner_id.bank_ids[0].bank_id.bic" />
-                                    </p>
-                                    <p id="branch_name" class="mb4" t-if="o.company_id.partner_id.bank_ids[0].bank_id.x_branch_name">
-                                            <strong>Branch : </strong>
-                                            <span t-field="o.company_id.partner_id.bank_ids[0].bank_id.x_branch_name" />
-                                        </p>
-                                    </p>
-                                </t>
-                                    </div>
-                    </div>
+                                <p id="branch_name" class="mb4" t-if="o.company_id.partner_id.bank_ids[0].x_account_name">
+                                        <strong>Account Name: </strong>
+                                        <span t-field="o.company_id.partner_id.bank_ids[0].x_account_name" />
+                                </p>
+                                <p id="acc_number" class="mb4">
+                                    <strong>Account Number:</strong>
+                                    <span t-field="o.company_id.partner_id.bank_ids[0].acc_number" />
+                                </p>
+                                <p id="bic" class="mb4">
+                                    <strong>Bank Code: </strong>
+                                    <span t-field="o.company_id.partner_id.bank_ids[0].bank_id.bic" />
+                                </p>
+                                <p id="branch_name" class="mb4" t-if="o.company_id.partner_id.bank_ids[0].bank_id.x_branch_name">
+                                        <strong>Branch : </strong>
+                                        <span t-field="o.company_id.partner_id.bank_ids[0].bank_id.x_branch_name" />
+                                </p>
+                            </p>
+                                
+                        
+                    
+                       
+                </div>
                 
             </xpath>
+
         </template>
 
     </data>
