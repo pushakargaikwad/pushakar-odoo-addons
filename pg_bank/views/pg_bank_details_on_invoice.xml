@@ -6,10 +6,10 @@
          
             <xpath expr="//p[@t-if='o.payment_term_id']" position="after">
                 
-                <div id="total" class="row">
+                <div id="bank" class="row">
 
                         <div class="col-xs-6 pull-left">
-                                <t t-if="o.company_id.country_id.code == 'IN' and o.company_id.partner_id.bank_ids">
+                                <t t-if="o.company_id.partner_id.bank_ids">
                                         <p id="bank_details" class="mb4">
                                             <strong>
                                             Bank Details :
