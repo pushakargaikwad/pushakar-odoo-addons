@@ -2,7 +2,7 @@
 
 {
     'name' : 'Bank Module Improvements',
-    'version' : '1.0.0',
+    'version' : '1.0.1',
     'summary': 'Bank Module Improvements',
     'sequence': 30,
     'description': """
@@ -13,6 +13,7 @@
     'website': 'https://pushakar.com/odoo-development/',
     'depends' : ['base','account','web'],
     'data': ['views/pg_bank_details_on_invoice.xml','views/pg_bank.xml',],
+    'images': ['static/description/banner.png'],
     'demo': [],
     'qweb': [ ],
     'author': 'Pushakar Gaikwad',
