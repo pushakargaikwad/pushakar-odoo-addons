@@ -2,7 +2,7 @@
 
 {
     'name' : 'Development Tweaks and Tools to make life Easier',
-    'version' : '1.0.4',
+    'version' : '1.0.5',
     'summary': 'A set of tools and tweaks to make Development easier and faster',
     'sequence': 31,
     "category": "Tools",
