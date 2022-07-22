@@ -2,7 +2,7 @@
 
 {
     'name' : 'Development Tweaks and Tools to make life Easier',
-    'version' : '1.0.5',
+    'version' : '1.0.6',
     'summary': 'A set of tools and tweaks to make Development easier and faster',
     'sequence': 31,
     "category": "Tools",
@@ -16,6 +16,7 @@
     'website': 'https://pushakar.com/odoo-development/',
     'depends' : ['base'],
     'data': ['views/pg_developer_tools_view.xml'],
+    'images': ['static/description/banner.png'],
     'demo': [],
     'qweb': [ ],
     'author': 'Pushakar Gaikwad',
