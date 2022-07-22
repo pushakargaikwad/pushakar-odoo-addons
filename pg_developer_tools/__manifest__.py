@@ -2,7 +2,7 @@
 
 {
     'name' : 'Development Tweaks and Tools to make life Easier',
-    'version' : '1.0.3',
+    'version' : '1.0.4',
     'summary': 'A set of tools and tweaks to make Development easier and faster',
     'sequence': 31,
     "category": "Tools",
@@ -21,7 +21,7 @@
     'author': 'Pushakar Gaikwad',
     'license':'AGPL-3',
     'installable': True,
-    'application': False,
+    'application': True,
     'auto_install': False,
 }
 
