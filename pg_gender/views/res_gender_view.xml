@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+	<data>
+        
+        <record model="ir.actions.act_window" id="action_gender_view">
+            <field name="name">Gender</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">res.gender</field>
+            <field name="binding_view_types">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+            
+            <!--Adding below Technical Menu-->
+            <menuitem id="pg_menu_configuration" name="Configuration" parent="base.menu_custom" 
+            groups="base.group_erp_manager"
+            sequence="3"
+            />
+            <menuitem id="menu_gender" name="Gender" parent="pg_menu_configuration" action="action_gender_view"
+            groups="base.group_erp_manager"
+            sequence="1"
+            />
+    </data>
+</openerp>
