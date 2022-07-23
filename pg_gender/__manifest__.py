@@ -12,7 +12,7 @@
     'category': 'Tools',
     'website': 'https://pushakar.com/odoo-development/',
     'depends' : ['base','web'],
-    'data': ['security/ir.model.access.csv','views/res_gender_view.xml'],
+    'data': ['security/ir.model.access.csv','views/res_gender_view.xml','data/res_gender_data.xml'],
     'images': [],
     'demo': [],
     'qweb': [ ],
