@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!--Default Data for Gender module that will be imported during module installation-->
+	<data noupdate="1">
+        <record id="male" model="res.gender">
+            <field name="name">Male</field>
+        </record>
+        <record id="female" model="res.gender">
+            <field name="name">Female</field>
+        </record>
+        <record id="other" model="res.gender">
+            <field name="name">Other</field>
+        </record>
+    </data>
+</odoo>
