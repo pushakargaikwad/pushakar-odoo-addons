@@ -5,8 +5,9 @@
                 <field name="model">res.partner.bank</field>
                 <field name="inherit_id" ref="base.view_partner_bank_form" />
                 <field name="arch" type="xml">
-                    <field name="bank_id" position="after">
+                    <field name="acc_number" position="after">
                         <field name="x_account_name"  />
+                        <field name="x_display_on_invoice_print"  widget="boolean_toggle"/>
                     </field>
                 </field>
             </record>

@@ -10,30 +10,39 @@
                         
                         
                             <p id="bank_details" class="mb4">
-                                <strong>
-                                Bank Details :
-                                </strong>
-                                <p id="bank_name" class="mb4">
-                                    <strong>Bank Name: </strong>
-                                    <span t-field="o.company_id.partner_id.bank_ids[0].bank_id.name" />
-                                </p>
+                                <t t-set="bank_details" t-value="0"/>
+                                
+                                <!--Loop through banks configured on company-->
+                                <t t-foreach="o.company_id.partner_id.bank_ids" t-as="bank">
+                                    <t t-if="bank.x_display_on_invoice_print">
+                                        <!--Display "Bank Details: only once and only if atleast one bank is configured to allow display."-->
+                                        <t t-if="bank_details==0">
+                                            <strong>Bank Details :</strong>
+                                            <t t-set="bank_details" t-value="1"/>
+                                        </t>
+                                        <p id="bank_name" class="mb4">
+                                            <strong>Bank Name: </strong>
+                                            <span t-field="bank.bank_id.name" />
+                                        </p>
 
-                                <p id="branch_name" class="mb4" t-if="o.company_id.partner_id.bank_ids[0].x_account_name">
-                                        <strong>Account Name: </strong>
-                                        <span t-field="o.company_id.partner_id.bank_ids[0].x_account_name" />
-                                </p>
-                                <p id="acc_number" class="mb4">
-                                    <strong>Account Number:</strong>
-                                    <span t-field="o.company_id.partner_id.bank_ids[0].acc_number" />
-                                </p>
-                                <p id="bic" class="mb4">
-                                    <strong>Bank Code: </strong>
-                                    <span t-field="o.company_id.partner_id.bank_ids[0].bank_id.bic" />
-                                </p>
-                                <p id="branch_name" class="mb4" t-if="o.company_id.partner_id.bank_ids[0].bank_id.x_branch_name">
-                                        <strong>Branch : </strong>
-                                        <span t-field="o.company_id.partner_id.bank_ids[0].bank_id.x_branch_name" />
-                                </p>
+                                        <p id="branch_name" class="mb4" t-if="o.company_id.partner_id.bank_ids[0].x_account_name">
+                                                <strong>Account Name: </strong>
+                                                <span t-field="bank.x_account_name" />
+                                        </p>
+                                        <p id="acc_number" class="mb4">
+                                            <strong>Account Number:</strong>
+                                            <span t-field="bank.acc_number" />
+                                        </p>
+                                        <p id="bic" class="mb4">
+                                            <strong>Bank Code: </strong>
+                                            <span t-field="bank.bank_id.bic" />
+                                        </p>
+                                        <p id="branch_name" class="mb4" t-if="o.company_id.partner_id.bank_ids[0].bank_id.x_branch_name">
+                                                <strong>Branch : </strong>
+                                                <span t-field="bank.x_branch_name" />
+                                        </p>
+                                    </t>
+                                </t>
                             </p>
                                 
                         
