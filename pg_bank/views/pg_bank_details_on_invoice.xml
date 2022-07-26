@@ -10,12 +10,16 @@
                         
                         
                             <p id="bank_details" class="mb4">
-                                <strong>
-                                Bank Details :
-                                </strong>
+                                <t t-set="bank_details" t-value="0"/>
+                                
                                 <!--Loop through banks configured on company-->
                                 <t t-foreach="o.company_id.partner_id.bank_ids" t-as="bank">
                                     <t t-if="bank.x_display_on_invoice_print">
+                                        <!--Display "Bank Details: only once and only if atleast one bank is configured to allow display."-->
+                                        <t t-if="bank_details==0">
+                                            <strong>Bank Details :</strong>
+                                            <t t-set="bank_details" t-value="1"/>
+                                        </t>
                                         <p id="bank_name" class="mb4">
                                             <strong>Bank Name: </strong>
                                             <span t-field="bank.bank_id.name" />
