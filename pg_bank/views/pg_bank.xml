@@ -7,7 +7,7 @@
                 <field name="arch" type="xml">
                     <field name="acc_number" position="after">
                         <field name="x_account_name"  />
-                        <field name="x_display_on_invoice_print"  />
+                        <field name="x_display_on_invoice_print"  widget="boolean_toggle"/>
                     </field>
                 </field>
             </record>

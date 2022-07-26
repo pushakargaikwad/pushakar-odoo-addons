@@ -2,7 +2,7 @@
 
 {
     'name' : 'Bank Module Improvements',
-    'version' : '1.2.1',
+    'version' : '1.3.1',
     'summary': 'Bank Module Improvements',
     'sequence': 30,
     'description': """
