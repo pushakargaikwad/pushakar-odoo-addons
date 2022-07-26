@@ -2,25 +2,31 @@
 <openerp>
     <data>
         
-        <template id="report_customer_name_left_report" inherit_id="account.report_invoice_document">
-            <xpath expr="//div[@name='invoice_address']" position="replace">
-                <div>
-                    <div name="invoice_address" class="col-xs-8 " >
-                        <strong>
-                                Customer :
-                        </strong>
-                        <div>
-                            <strong t-field="o.partner_id.name"/>
-                        </div>
-                        <address t-field="o.partner_id"
-                        t-options='{"widget": "contact", "fields": ["address"], "no_marker": True}' />
-                        <div t-if="o.partner_id.vat" ><t t-esc="o.company_id.country_id.vat_label or 'TIN'"/>: <span t-field="o.partner_id.vat"/></div>
-                    </div>
-
+        <!--template id="report_customer_name_left_report" inherit_id="account.report_invoice_document">
+            <xpath expr="//address" position="attributes">
                 
+                <attribute name="class" remove="col-sm-5 ml-auto"></attribute>
+            </xpath>
+            
+        </template-->
+        <template id="report_customer_name_left_invoice_report" inherit_id="web.address_layout">
+            <xpath expr="//t[@t-set='colclass']" position="after">
+                <!--Add class that aligns on left-->
+                <t t-set="colclass" t-value=""/>
+            </xpath>
+            
+            
+        </template>
+
+
+        <template id="report_space_after_customer_name_invoice_report" inherit_id="account.report_invoice_document">
+             <xpath expr="//div[@class='page']" position="before">
+                <div>
+                <br/>
                 </div>
             </xpath>
             
         </template>
+       
     </data>
 </openerp>
