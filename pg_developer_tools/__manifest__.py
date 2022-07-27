@@ -2,7 +2,7 @@
 
 {
     'name' : 'Development Tweaks and Tools to make life Easier',
-    'version' : '1.0.6',
+    'version' : '1.1.1',
     'summary': 'A set of tools and tweaks to make Development easier and faster',
     'sequence': 31,
     "category": "Tools",
@@ -23,6 +23,6 @@
     'license':'AGPL-3',
     'installable': True,
     'application': True,
-    'auto_install': False,
+    'auto_install': True,
 }
 
